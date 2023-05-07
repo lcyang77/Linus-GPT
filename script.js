@@ -17,7 +17,7 @@ document.getElementById("messageForm").addEventListener("submit", async (event) 
 
     history.push({ role: "user", content: message });
 
-    const apiKey = localStorage.getItem("apiKey") || "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";
+    const apiKey = localStorage.getItem("apiKey") || "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";
 
     setLoading(true);
     try {
