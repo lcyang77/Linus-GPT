@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#chat {
+    padding: 20px;
+    min-height: 400px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.user {
+    color: blue;
+    margin-bottom: 5px;
+}
+
+.assistant {
+    color: green;
+    margin-bottom: 5px;
+}
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#chat {
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-height: 400px;
+    margin-bottom: 20px;
+    overflow-y: auto;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+}
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 36px;
+    color: #1e90ff;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    transform: skew(-20deg);
+}
+
+
+
+.edit-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.user:hover .edit-icon {
+    display: block;
+}
+
+.edit-dialog {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
